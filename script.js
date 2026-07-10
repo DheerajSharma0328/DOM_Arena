@@ -1,20 +1,39 @@
-let doc = document.documentElement;
-let hed = document.head;
-let bod = document.body;
-
-let bodfirst = bod.firstChild;
-let bodlast = bod.lastChild;
-let bodchildren = bod.children;
-let docc = document;
-
-let idd = document.getElementById('parent');
-console.log(idd);
+let htmlObject = document.documentElement;
+let htmlTag = document.querySelector('html');
 
 
-// console.log(docc);
-// console.log(doc);
-// console.log(hed);
-// console.log(bod);
-// console.log('Body First Child: ' , bodfirst);
-// console.log('Body Last Child: ' , bodlast);
-// console.log('Body Children: ' , bodchildren);
+/*
+
+1.--------------------------------------------------------------------------------------------------------
+
+=> In dom html === document.documentElement
+=> document.documentElement this is html object in dom
+
+console.log(htmlObject === htmlTag);
+
+2.--------------------------------------------------------------------------------------------------------
+
+=> Using childNode property and priniting child of html
+
+console.log(htmlObject.childNodes);
+
+3.--------------------------------------------------------------------------------------------------------
+
+=> Using childNode property and priniting child of document
+
+console.log(document.childNodes);
+
+4.--------------------------------------------------------------------------------------------------------
+
+=> Printing parent of document but the result is null.
+=> In dom null mean not present and it is the proof that dom doesnot have any parent and it is the
+*  entery point to the DOM tree
+
+console.log(document.parentNode);
+console.log(document.parentElement);
+
+5.--------------------------------------------------------------------------------------------------------
+
+
+
+*/
