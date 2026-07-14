@@ -1,5 +1,6 @@
 let htmlObject = document.documentElement;
 let htmlTag = document.querySelector('html');
+let parent = document.querySelector('#parent')
 
 
 /*
@@ -29,11 +30,16 @@ console.log(document.childNodes);
 => In dom null mean not present and it is the proof that dom doesnot have any parent and it is the
 *  entery point to the DOM tree
 
-console.log(document.parentNode);
 console.log(document.parentElement);
+console.log(document.parentNode);
 
 5.--------------------------------------------------------------------------------------------------------
 
 
 
 */
+
+// Tag: nodeName and tagName
+
+console.log( document.body.nodeName ); // BODY
+console.log( document.body.tagName ); // BODY
