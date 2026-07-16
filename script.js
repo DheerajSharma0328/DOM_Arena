@@ -1,7 +1,8 @@
 let htmlObject = document.documentElement;
 let htmlTag = document.querySelector('html');
 let parent = document.querySelector('#parent')
-
+let docum = document;
+let firstchild = document.querySelector('.rightChildren')
 
 /*
 
@@ -41,5 +42,19 @@ console.log(document.parentNode);
 
 // Tag: nodeName and tagName
 
-console.log( document.body.nodeName ); // BODY
-console.log( document.body.tagName ); // BODY
+// console.log( document.body.nodeName ); // BODY
+// console.log( document.body.tagName ); // BODY
+// console.log(docum.nodeType); // Checking Document Node Type Ans = 9  for document node
+// console.log(parent.innerHTML); // It is used to get HTML inside and element ad a string
+// firstchild.innerHTML+="Inserting the sting inside the HTML element";
+// console.log(firstchild.innerHTML);
+// console.log(firstchild.outerHTML);
+
+
+//Append Element
+// let ptag = document.createElement('p');
+// ptag.textContent = 'I am appending the paragraph tag. Append means adding something.';
+// firstchild.append(ptag);
+
+// firstchild.append('Dheeraj Kaushik');
+// firstchild.remove();
