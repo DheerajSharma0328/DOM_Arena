@@ -3,6 +3,7 @@ let htmlTag = document.querySelector('html');
 let parent = document.querySelector('#parent')
 let docum = document;
 let firstchild = document.querySelector('.rightChildren')
+let rightChild = document.querySelector('#rightChild')
 
 /*
 
@@ -58,3 +59,13 @@ console.log(document.parentNode);
 
 // firstchild.append('Dheeraj Kaushik');
 // firstchild.remove();
+
+//Implementing Event Delegation
+
+rightChild.onclick = function(event){
+    let target = event.target;
+
+    if(target != rightChild){
+        console.log(target.innerText);
+    }
+}

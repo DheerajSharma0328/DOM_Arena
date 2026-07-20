@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Arena</title>
+    <title>Introduction to Events</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>  
 </head>
 <body>
     <div id="parent">
+
         <div id="rightChild">
-            <div class="rightChildren"></div>
-            <div class="rightChildren"></div>
-            <div class="rightChildren"></div>
-            <div class="rightChildren"></div>
+            
+            <div class="rightChildren" id="one">1</div>
+            <!-- <script>
+                dom.onclick = function(){
+                    alert('Hurrre It worked');
+                }
+            </script> -->
+            <div class="rightChildren" id="two">2</div>
+            <div class="rightChildren" id="three">3</div>
+            <div class="rightChildren" id="four">4</div>
         </div>
-        <div id="leftChild">
-            <div class="leftChildren"></div>
+        <div id="leftChild" onclick="console.log('clicked Parent')">
+
+            <div class="leftChildren" onclick="console.log('Event Bubling Occur')">
+                <p id="para" onclick="event.stopPropagation()">I am the Paragraph Tag</p>
+            </div>
             <div class="leftChildren"></div>
             <div class="leftChildren"></div>
             <div class="leftChildren"></div>
         </div>
-        <div class="alert">
-            <strong>Hi there!</strong> You've read an important message.
-        </div>
+        
     </div>
 </body>
 </html>
