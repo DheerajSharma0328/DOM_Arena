@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*
+
 body{
     background-color: rgba(241, 214, 65, 0.7);
     display: flex;
@@ -22,7 +24,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /* flex-direction: column; */
+    
 
 }
 
@@ -70,3 +72,27 @@ body{
   color: #3c763d;
   background-color: #dff0d8;
 }
+
+*/
+
+/* Testing Arrea 2 */
+
+.parent{
+    border: 3px solid red;
+    
+}
+
+.child{
+    border: 3px solid black;
+}
+
+.rightChildren{
+    border: 3px solid magenta;
+    height: 100px;
+    width: 100px;
+}
+
+/* .leftChildren{
+    border: 3px solid magenta;
+    height: 100px;
+} */

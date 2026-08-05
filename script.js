@@ -58,3 +58,7 @@ console.log(document.parentNode);
 
 // firstchild.append('Dheeraj Kaushik');
 // firstchild.remove();
+
+function sayHello(){
+    console.log("Hello Onclick is working");
+}
